@@ -8,24 +8,110 @@
   border: 1px solid black;
 }
 
+body{
+  background-color: white;
+  color: #031b4e; /*navy*/
+}
 
 /*HEADER*/
 /*top-header*/
+.navbar{
+  background-color: white;
+  padding: 0 2rem;
+  box-shadow: 0 0 5px 0 rgba(0,0,0,.3);
+}
+
+.navbar [class*="glyphicon-chevron"]{
+  padding-left: .5rem;
+}
+
 .top-header{
-  height: 30px;
-  line-height: 30px;
+  height: 40px;
+  line-height: 40px;
+  border-bottom: 1px solid lightgrey;
+}
+
+.top-header .text-left div{
+  float: left;
+}
+
+.new-button{
+  display: inline-block;
+  background-color: rgb(0,215,210);
+  color: rgb(3,27,78);
+  height: 20px;
+  line-height: 20px;
+  width: 40px;
+  font-size: 1rem;
+  font-weight: bolder;
+  text-align: center;
+  border-radius: 5px;
+  margin: 10px 10px 0 0;
+}
+
+.top-header .text-left > p{
+  font-size: 1rem;
+  font-weight: bolder;
+  color: grey;
+}
+
+.top-header p:hover{
+  color: blue;
+}
+
+.top-header ul li{
+  font-size: 1rem;
+  font-weight: bolder;
+  color: grey;
+  display: inline-block;
+  padding-left: 2rem;
+}
+
+.top-header ul li:hover{
+  color: #006aff;/*blue*/
 }
 
 /*menu-header*/
 .menu-header{
-  height: 50px;
-  line-height: 50px;
+  height: 40px;
+  line-height: 40px;
+}
+.menu-header img{
+  height: 25px;
 }
 
+.menu-header ul li{
+  font-size: 1.5rem;
+  color: #031b4e; /*navy*/
+  display: inline-block;
+  padding-left: 2rem;
+}
+
+.menu-header ul li:hover{
+  color: #006aff; /*blue*/
+}
+
+.btn-outline-primary{
+  background-color: white;
+  color: #006aff; /*blue*/
+  border: 1px solid #006aff;/*blue*/
+}
+
+.btn-primary{
+  background-color: #006aff;/*blue*/
+  color: white;
+}
 /*banner*/
 .jumbotron{
-  background-color: blue;
-  height: 600px;
+  background-image: url(../img/banner-bg.svg);
+  background-size: cover;
+  background-position: center;
+  height: 700px;
+  color: white;
+  margin-top: 90px;
+}
+
+.banner-text-content{
 }
 
 /* SECTION - 01 */
