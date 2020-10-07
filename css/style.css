@@ -1,0 +1,62 @@
+.debug{
+  background-color: lightgrey;
+  border: 1px solid grey;
+}
+
+.debug [class*="col-"]{
+  background-color: grey;
+  border: 1px solid black;
+}
+
+
+/*HEADER*/
+/*top-header*/
+.top-header{
+  height: 30px;
+  line-height: 30px;
+}
+
+/*menu-header*/
+.menu-header{
+  height: 50px;
+  line-height: 50px;
+}
+
+/*banner*/
+.jumbotron{
+  background-color: blue;
+  height: 600px;
+}
+
+/* SECTION - 01 */
+
+
+
+
+/* SECTION - 02 */
+
+
+
+/* SECTION - 03 */
+
+
+
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up)*/
+@media (min-width: @screen-sm-min) {
+
+}
+
+/* Medium devices (desktops, 992px and up)*/
+@media screen and (min-width: 992px) {
+
+}
+
+/* Large devices (large desktops, 1200px and up)*/
+@media screen and (min-width: 1200px) {
+  #built .container .row {
+    text-align: left;
+  }
+}
