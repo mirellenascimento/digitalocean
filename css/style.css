@@ -266,10 +266,17 @@ p.small{
 }
 
 /* SECTION - 02 */
-#deploy-scale p{
+#deploy-scale h3{
   color: navy; /*navy*/
 }
-
+#deploy-scale [class*="col-"]{
+  padding: 2.5rem;
+}
+#deploy-scale .row :last-child p{
+  color: #5b6987;/*grey*/
+  font-weight: 300;
+  font-size: 1.8rem;
+}
 /*DESKTOP LIST*/
 #deploy-scale .lg-vertical{
   list-style: none;
@@ -300,7 +307,7 @@ p.small{
   color: #5b6987;
   font-size: 1.8rem;
   font-weight: 400;
-  margin: 1.5rem 0;
+  margin-top: 1.5rem;
 }
 
 #deploy-scale .mobile-horizontal :first-child{
@@ -309,7 +316,9 @@ p.small{
 }
 
 /* SECTION - 03 */
-
+#designer-for{
+  
+}
 
 
 /* Extra small devices (phones, less than 768px) */
@@ -338,6 +347,9 @@ p.small{
   .form-box{
     margin-top: 90px;
   }
+  #deploy-scale .row *{
+    text-align: left;
+  }
 }
 
 /* Large devices (large desktops, 1200px and up)*/
@@ -352,6 +364,10 @@ p.small{
   }
   .form-box{
     margin-top: 150px;
+  }
+
+  #deploy-scale{
+    text-align: left;
   }
 
   #built .container .row {
