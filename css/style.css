@@ -317,8 +317,12 @@ p.small{
 
 /* SECTION - 03 */
 #designer-for{
-  
+  background-color: #f3f5f9; /*lightgrey*/
+  color: navy; /*navy*/
+  padding: 6rem 0;
 }
+
+
 
 
 /* Extra small devices (phones, less than 768px) */
