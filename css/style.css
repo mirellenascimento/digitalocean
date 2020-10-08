@@ -8,10 +8,14 @@
   border: 1px solid black;
 }
 
-body{
+body, section{
   font-family: 'Lato', sans-serif;
   background-color: white;
   color: #031b4e; /*navy*/
+}
+h1{
+  font-weight: 700;
+  padding: 5rem 0 2rem 0;
 }
 h2{
   font-weight: 700;
@@ -25,6 +29,11 @@ p.lead{
   font-size: 2.5rem;
   line-height: 3.5rem;
   padding: 1.5rem;
+}
+p.lead-2{
+  font-size: 2rem;
+  line-height: 3rem;
+  font-weight: 300;
 }
 p.small{
   font-size: 1.2rem;
@@ -90,7 +99,6 @@ p.small{
   font-size: 1rem;
   font-weight: bolder;
   color: #5b6987;
-  display: inline-block;
   padding-left: 2rem;
   height: 30px;
   line-height: 20px;
@@ -114,7 +122,6 @@ p.small{
 .menu-header ul li{
   font-size: 1.5rem;
   color: #031b4e; /*navy*/
-  display: inline-block;
   padding-left: 2rem;
 }
 
@@ -259,8 +266,47 @@ p.small{
 }
 
 /* SECTION - 02 */
+#deploy-scale p{
+  color: navy; /*navy*/
+}
 
+/*DESKTOP LIST*/
+#deploy-scale .lg-vertical{
+  list-style: none;
+}
+#deploy-scale .lg-vertical li{
+  height: 60px;
+  line-height: 60px;
+  border-left: 2px solid #f3f5f9;
+  color: #5b6987;
+  font-size: 1.8rem;
+  font-weight: 400;
+  padding-left: 1.5rem;
+}
 
+#deploy-scale .lg-vertical :first-child{
+  border-left: 3px solid blue;
+  color: black;
+}
+/*MOBILE LIST*/
+#deploy-scale .mobile-horizontal{
+  text-align: center;
+}
+
+#deploy-scale .mobile-horizontal li{
+  width: 80px;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #f3f5f9;
+  color: #5b6987;
+  font-size: 1.8rem;
+  font-weight: 400;
+  margin: 1.5rem 0;
+}
+
+#deploy-scale .mobile-horizontal :first-child{
+  border-bottom: 3px solid blue;
+  color: black;
+}
 
 /* SECTION - 03 */
 
