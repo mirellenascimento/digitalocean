@@ -207,10 +207,7 @@ p.small{
   width: 100%;
   margin: 10px 0;
 }
-{
-  margin: 10px;
 
-}
  #button-google{
   font-size: 1.8rem;
   font-weight: 700;
@@ -237,11 +234,29 @@ p.small{
 }
 
 
-
 /* SECTION - 01 */
+#logos{
+  background-color: #f3f5f9; /*lightgrey*/
+  color: #5b6987;/*grey*/
+  padding: 6rem 0;
+}
+#logos img{
+  height: 80px;
+  line-height: 80px;
+}
 
+#logos p{
+  font-size: 1.8rem;
+  color: #006aff;/*blue*/
+}
 
+#logos p:hover{
+  color: blue;
+}
 
+#logos .row{
+  padding: 3rem 0;
+}
 
 /* SECTION - 02 */
 
