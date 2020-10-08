@@ -6,21 +6,22 @@
     <meta name="viewport" content="width=device-width, inicial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body >
+  <body>
 
     <!-- HEADER-->
     <header>
       <div class="navbar navbar-fixed-top">
-        <div class="container-fluid">
+        <div class="container">
           <!-- top-header-->
-            <div class="row top-header">
-              <div class="hidden-xs hidden-sm hidden-md col-lg-8 text-left">
+            <div class="row top-header visible-lg-block">
+              <div class="col-lg-8 text-left">
                 <div class="new-button"><p>NEW</p></div>
-                <p>Get your apps to market faster with DigitalOcean App Platform<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></p>
+                <p>Get your apps to market faster with DigitalOcean App Platform<span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></p>
               </div>
-              <div class="hidden-xs hidden-sm hidden-md col-lg-4 text-right">
+              <div class="col-lg-4 text-right">
                 <nav>
                   <ul>
                     <li>Blog</li>
@@ -34,17 +35,17 @@
 
             <!-- menu-header-->
             <div class="row menu-header">
-              <div class="col-xs-6 col-sm-6 col-md-6 col-lg-1 text-left">
+              <div class="col-xs-6 col-sm-6 col-md-6 col-lg-2 text-left">
                 <img src="img/logo.png" alt="Logo Digital Ocean">
               </div>
-              <div class="hidden-xs hidden-sm hidden-md col-lg-9 text-left">
+              <div class="hidden-xs hidden-sm hidden-md col-lg-8 text-left">
                 <nav>
                   <ul>
-                    <li>Products<span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></li>
-                    <li>Solutions<span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></li>
+                    <li>Products<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></li>
+                    <li>Solutions<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></li>
                     <li>Marketplace</li>
                     <li>Customers</li>
-                    <li>Community<span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></li>
+                    <li>Community<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></li>
                     <li>Pricing</li>
                   </ul>
                 </nav>
@@ -62,17 +63,47 @@
       <!-- banner-->
       <div class="jumbotron">
         <div class="container">
-          <div class="row">
-            <div class="banner-text-content col-xs-12 col-sm-12 col-md-7 col-lg-7">
-              <h1>Welcome to the developer cloud</h1>
-              <p>We make it simple to launch in the cloud and scale up as you grow – with an intuitive control panel, predictable pricing, team accounts, and more.</p>
+          <div class="row text-center">
+            <div class="col-xs-12 col-sm-12 col-md-7 col-lg-7">
+              <div class="banner-text-content">
+                <h2>Welcome to the developer cloud</h2>
+                <p class="lead">We make it simple to launch in the cloud and scale up as you grow – with an intuitive control panel, predictable pricing, team accounts, and more.</p>
+              </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
-              <p>image</p>
+              <div class="form-box">
+                <div class="form-tittle">
+                  <h3>Deploy in seconds</h3>
+                </div>
+                <div class="row form-body">
+                  <form>
+                    <div class="form-group">
+                      <input type="text" class="form-control" id="InputName" placeholder="First Name">
+                    </div>
+                    <div class="form-group">
+                      <input type="email" class="form-control" id="InputEmail" placeholder="Email Address">
+                    </div>
+                    <div class="form-group">
+                      <input type="password" class="form-control" id="InputPassword" placeholder="Password">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Sign up with email</button>
+                  </form>
+                </div>
+                <div class="line-divider"></div>
+                <div class="row form-bottom">
+                  <div class="col-xs-9 col-md-9">
+                    <button type="button" id="button-google" class="btn btn-outline-primary"><img src="img/icon-google.svg" alt="Google">Sign up with Google</button>
+                  </div>
+                  <div class="col-xs-3 col-md-3">
+                    <button type="button" id="button-github" class="btn btn-outline-primary"><img src="img/icon-github.svg" alt="Github"> </button>
+                  </div>
+                </div>
+              </div>
+              <p class="small">By signing up you agree to the Terms of Service.</p>
             </div>
           </div>
         </div>
-     </div>
+      </div>
     </header>
 
     <main>

@@ -9,28 +9,51 @@
 }
 
 body{
+  font-family: 'Lato', sans-serif;
   background-color: white;
   color: #031b4e; /*navy*/
 }
+h2{
+  font-weight: 700;
+  padding: 0 5rem;
+}
+h3{
+  font-weight: 700;
+  font-size: 2rem;
+}
+p.lead{
+  font-size: 2.5rem;
+  line-height: 3.5rem;
+  padding: 1.5rem;
+}
+p.small{
+  font-size: 1.2rem;
+}
 
+/*Attributes*/
+.centered{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%; -50%);
+}
 /*HEADER*/
 /*top-header*/
 .navbar{
   background-color: white;
-  padding: 0 2rem;
   box-shadow: 0 0 5px 0 rgba(0,0,0,.3);
 }
 
-.navbar [class*="glyphicon-chevron"]{
+.navbar [class*="glyphicon-menu-"]{
+  font-size: 1rem;
   padding-left: .5rem;
+  color: #5b6987;
 }
 
 .top-header{
-  height: 40px;
-  line-height: 40px;
   border-bottom: 1px solid lightgrey;
 }
-
+/*just large screens*/
 .top-header .text-left div{
   float: left;
 }
@@ -46,25 +69,32 @@ body{
   font-weight: bolder;
   text-align: center;
   border-radius: 5px;
-  margin: 10px 10px 0 0;
+  margin-top: 10px;
 }
 
 .top-header .text-left > p{
   font-size: 1rem;
   font-weight: bolder;
-  color: grey;
+  color: #5b6987;
+  height: 30px;
+  line-height: 20px;
+  padding-top: 10px;
+  margin-left: 50px;
 }
 
 .top-header p:hover{
-  color: blue;
+  color: #006aff;/*blue*/
 }
 
 .top-header ul li{
   font-size: 1rem;
   font-weight: bolder;
-  color: grey;
+  color: #5b6987;
   display: inline-block;
   padding-left: 2rem;
+  height: 30px;
+  line-height: 20px;
+  padding-top: 10px;
 }
 
 .top-header ul li:hover{
@@ -73,11 +103,12 @@ body{
 
 /*menu-header*/
 .menu-header{
-  height: 40px;
-  line-height: 40px;
+  height: 65px;
+  line-height: 65px;
 }
+
 .menu-header img{
-  height: 25px;
+  height: 28px;
 }
 
 .menu-header ul li{
@@ -95,24 +126,117 @@ body{
   background-color: white;
   color: #006aff; /*blue*/
   border: 1px solid #006aff;/*blue*/
+  padding: 5px 8%;
+  font-weight: bold;
+  margin-right:1rem;
 }
 
 .btn-primary{
   background-color: #006aff;/*blue*/
   color: white;
 }
+
+.menu-header .glyphicon-menu-hamburger{
+  font-size: 1.5rem;
+  float: right;
+  line-height: 60px;
+
+}
 /*banner*/
 .jumbotron{
   background-image: url(../img/banner-bg.svg);
-  background-size: cover;
   background-position: center;
-  height: 700px;
+  background-size: cover;
+  min-height: 850px;
   color: white;
-  margin-top: 90px;
+  margin-top: 65px;
 }
 
 .banner-text-content{
+  margin-top: 12rem;
 }
+
+.form-box{
+  display: inline-block;
+  text-align: center;
+  min-width: 370px;
+  background-color: white;
+  margin-top: 50px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.form-tittle{
+  background-color: #f3f5f9; /*lightgrey*/
+  color: #031b4e; /*navy*/
+  height: 60px;
+  min-width: 370px;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.form-box form{
+ margin-top: 80px;
+ padding: 0 30px;
+}
+.form-body, .form-bottom{
+    margin: 10px 0;
+}
+.form-box form [id*="Input"]{
+  line-height: 50px;
+  height: 50px;
+}
+
+.form-box .btn-primary{
+  width: 100%;
+  padding: 20px;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+.form-box .btn-primary:hover{
+  background-color: blue;
+}
+.line-divider{
+  display: inline-block;
+  height: 1px;
+  background-color: #f3f5f9; /*lightgrey*/
+  width: 100%;
+  margin: 10px 0;
+}
+{
+  margin: 10px;
+
+}
+ #button-google{
+  font-size: 1.8rem;
+  font-weight: 700;
+  height: 50px;
+  float: left;
+  margin-left: 15px;
+}
+#button-github{
+ font-size: 1.8rem;
+ font-weight: 700;
+ height: 50px;
+ width: 50px;
+ float: right;
+ margin-right: 15px;
+}
+.form-bottom img{
+  height: 30px;
+  line-height: 30px;
+  padding: 5px;
+  color: yellow;
+}
+.form-bottom{
+  margin-bottom: 30px;
+}
+
+
 
 /* SECTION - 01 */
 
@@ -131,17 +255,44 @@ body{
 /* No media query since this is the default in Bootstrap */
 
 /* Small devices (tablets, 768px and up)*/
-@media (min-width: @screen-sm-min) {
+@media screen and (min-width: 768px) {
+  .jumbotron h2{
+    font-size: 6rem;
+  }
+  p.lead{
+    padding: 5rem;
+  }
+  .banner-text-content{
+    margin-top: 6rem;
+
 
 }
 
 /* Medium devices (desktops, 992px and up)*/
 @media screen and (min-width: 992px) {
-
+  .banner-text-content{
+    margin-top: 15rem;
+    text-align: left;
+  }
+  .form-box{
+    margin-top: 90px;
+  }
 }
 
 /* Large devices (large desktops, 1200px and up)*/
 @media screen and (min-width: 1200px) {
+  p.lead{
+    padding-right: 0;
+    padding-top: 1rem;
+  }
+  .banner-text-content{
+    margin-top: 25rem;
+    text-align: left;
+  }
+  .form-box{
+    margin-top: 150px;
+  }
+
   #built .container .row {
     text-align: left;
   }
@@ -157,4 +308,5 @@ body{
   .footer-bottom:last-child{
     text-align: right;
   }
+
 }
