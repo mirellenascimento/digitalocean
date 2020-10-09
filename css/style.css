@@ -254,14 +254,18 @@ p.small{
   color: #5b6987;/*grey*/
   padding: 6rem 0;
 }
-#logos img{
-  height: 80px;
-  line-height: 80px;
+#logos ul li img{
+  width: 150px;
+}
+#logos ul{
+  max-width: 50%;
+  margin: auto;
 }
 
 #logos p{
   font-size: 1.8rem;
   color: #006aff;/*blue*/
+  text-align: center;
 }
 
 #logos p:hover{
@@ -408,9 +412,7 @@ p.small{
 #cities .container .text-center a:hover{
   color: blue;
 }
-#cities .container .text-center{
-  margin: 7rem 0;
-}
+
 #cities .row{
 margin: 5rem 10rem;
 min-width: 350px;
@@ -435,6 +437,95 @@ min-width: 350px;
 #cities .row .row a:hover{
   color: blue;
 }
+/* SECTION - 06 */
+
+#testimonials .container .text-center a{
+  color: #006aff;/*blue*/
+  font-weight: 400;
+  text-decoration: none;
+}
+#testimonials .container .text-center a:hover{
+  color: blue;
+}
+
+#testimonials .container .text-center{
+  margin: 2rem 0;
+}
+
+#testimonials img{
+  width: 200px;
+  margin: 5rem;
+}
+
+#test-box{
+  display: inline-block;
+  width: 100%;
+  height: 450px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 3px 3px 5px lightgrey;
+}
+
+#test-box [class*="fa-quote-"]{
+  color: lightgrey;
+  padding: 1rem;
+}
+#test-box .fa-quote-right{
+  font-size: 1rem;
+}
+#test-box p{
+  color: #5b6987;/*grey*/
+}
+#test-box a{
+  color: #006aff;/*blue*/
+  font-size: 1.7rem;
+
+}
+#test-box a:hover{
+  color: blue;
+}
+
+#test-box :nth-child(4){
+  font-size: 1.8rem;
+  margin-top: 3rem;
+}
+
+#test-box :nth-child(5){
+  font-size: 1.2rem;
+  font-weight: lighter;
+}
+
+/* SECTION - 07 */
+
+#testimonials .glyphicon-arrow-right{
+  color: grey;
+  height: 450px;
+  line-height: 450px;
+  float: right;
+  font-size: 1.5rem;
+}
+
+#testimonials .glyphicon-arrow-left{
+  color: grey;
+  height: 450px;
+  line-height: 450px;
+  font-size: 1.5rem;
+}
+
+#get-started{
+  background-image: url(../img/bg-bottom.svg);
+  background-size: cover;
+  color: white;
+}
+
+#get-started button{
+  background-color: white;
+  color: blue;
+  margin-bottom: 70px;
+  transform: scale(1.2);
+  border: none;
+}
+
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Bootstrap */
 
@@ -462,6 +553,10 @@ min-width: 350px;
   .form-box{
     margin-top: 90px;
   }
+  #logos ul{
+    max-width: 60%;
+    margin: auto;
+  }
   #deploy-scale .row *{
     text-align: left;
   }
@@ -479,6 +574,10 @@ min-width: 350px;
   }
   .form-box{
     margin-top: 150px;
+  }
+  #logos ul{
+    max-width: 90%;
+    margin: auto;
   }
 
   #deploy-scale{
@@ -513,11 +612,20 @@ min-width: 350px;
     margin: 7rem 20rem;
   }
 
+
   #get-started h2{
     text-align: left;
   }
   #get-started .container button{
     float: right;
+  }
+  #get-started h1{
+    float: left;
+  }
+
+  #get-started button{
+    float: right;
+    margin: 75px 0;
   }
   .footer-bottom .container .row :nth-child(2){
     text-align: left;
